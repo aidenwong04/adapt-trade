@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=71"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "adapt-trade"
+version = "0.1.0"
+description = "Production online learning system for crypto price direction prediction"
+requires-python = ">=3.11"
+dependencies = [
+    "python-binance>=1.0.19",
+    "river>=0.21.0",
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.29.0",
+    "pydantic>=2.7.1",
+    "mlflow>=2.13.0",
+    "prometheus-client>=0.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.2.0",
+    "ruff>=0.4.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]   # pycodestyle errors, pyflakes, isort
+
+[tool.pytest.ini_options]
+testpaths = ["test"]
