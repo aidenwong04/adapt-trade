@@ -3,7 +3,10 @@ from adapt_trade.features.pipeline import FeaturePipeline
 from adapt_trade.model.learner import OnlineClassifier
 
 # 1. Load
-df = pd.read_csv('data/btcusdt_15m.csv')
+from pathlib import Path
+
+DATA_PATH = Path(__file__).parent.parent.parent / "data" / "btcusdt_15m.csv"
+df = pd.read_csv(DATA_PATH)
 
 print("Successfully loaded csv.")
 

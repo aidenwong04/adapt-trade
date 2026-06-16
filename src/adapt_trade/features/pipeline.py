@@ -23,7 +23,7 @@ class FeaturePipeline:
         
         self.mean_ret.update(ret)
         self.var_ret.update(ret)
-        self.ewm_ret.update(ret)
+        # self.ewm_ret.update(ret)
         self.mean_vol.update(volume)
         self.ewm.update(close)
 
