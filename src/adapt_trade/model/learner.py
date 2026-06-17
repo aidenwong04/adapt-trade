@@ -3,7 +3,7 @@ from river.utils import Rolling
 
 class OnlineClassifier:
     def __init__(self):
-        self.hatc = tree.HoeffdingAdaptiveTreeClassifier()
+        self.hatc = tree.HoeffdingAdaptiveTreeClassifier(seed=42)
         self.lr = linear_model.LogisticRegression(optim.SGD(0.1))
 
         self.rocauc_hatc = Rolling(metrics.ROCAUC(), window_size=500)

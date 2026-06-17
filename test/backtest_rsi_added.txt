@@ -1,0 +1,40 @@
+Successfully loaded csv.
+n=500 | HAT acc=0.492 auc=0.517 | LR acc=0.468 auc=0.472
+n=1000 | HAT acc=0.466 auc=0.490 | LR acc=0.504 auc=0.506
+n=1500 | HAT acc=0.500 auc=0.504 | LR acc=0.458 auc=0.465
+n=2000 | HAT acc=0.530 auc=0.549 | LR acc=0.478 auc=0.484
+n=2500 | HAT acc=0.486 auc=0.480 | LR acc=0.482 auc=0.483
+n=3000 | HAT acc=0.502 auc=0.491 | LR acc=0.502 auc=0.498
+n=3500 | HAT acc=0.518 auc=0.529 | LR acc=0.498 auc=0.499
+n=4000 | HAT acc=0.554 auc=0.559 | LR acc=0.486 auc=0.479
+n=4500 | HAT acc=0.500 auc=0.514 | LR acc=0.532 auc=0.529
+n=5000 | HAT acc=0.550 auc=0.543 | LR acc=0.536 auc=0.530
+n=5500 | HAT acc=0.482 auc=0.498 | LR acc=0.480 auc=0.483
+n=6000 | HAT acc=0.508 auc=0.500 | LR acc=0.532 auc=0.527
+n=6500 | HAT acc=0.540 auc=0.563 | LR acc=0.502 auc=0.505
+n=7000 | HAT acc=0.528 auc=0.533 | LR acc=0.504 auc=0.506
+n=7500 | HAT acc=0.504 auc=0.502 | LR acc=0.502 auc=0.503
+n=8000 | HAT acc=0.520 auc=0.534 | LR acc=0.544 auc=0.546
+n=8500 | HAT acc=0.504 auc=0.521 | LR acc=0.504 auc=0.505
+n=9000 | HAT acc=0.500 auc=0.506 | LR acc=0.496 auc=0.499
+n=9500 | HAT acc=0.542 auc=0.532 | LR acc=0.464 auc=0.466
+n=10000 | HAT acc=0.524 auc=0.544 | LR acc=0.486 auc=0.486
+n=10500 | HAT acc=0.528 auc=0.510 | LR acc=0.530 auc=0.527
+n=11000 | HAT acc=0.480 auc=0.479 | LR acc=0.526 auc=0.528
+n=11500 | HAT acc=0.562 auc=0.562 | LR acc=0.498 auc=0.499
+n=12000 | HAT acc=0.534 auc=0.517 | LR acc=0.486 auc=0.486
+n=12500 | HAT acc=0.494 auc=0.469 | LR acc=0.490 auc=0.489
+n=13000 | HAT acc=0.544 auc=0.551 | LR acc=0.508 auc=0.509
+n=13500 | HAT acc=0.542 auc=0.528 | LR acc=0.462 auc=0.463
+n=14000 | HAT acc=0.508 auc=0.517 | LR acc=0.472 auc=0.468
+n=14500 | HAT acc=0.508 auc=0.508 | LR acc=0.502 auc=0.504
+n=15000 | HAT acc=0.510 auc=0.475 | LR acc=0.520 auc=0.520
+n=15500 | HAT acc=0.540 auc=0.523 | LR acc=0.506 auc=0.505
+n=16000 | HAT acc=0.490 auc=0.479 | LR acc=0.488 auc=0.488
+n=16500 | HAT acc=0.518 auc=0.538 | LR acc=0.516 auc=0.510
+n=17000 | HAT acc=0.530 auc=0.529 | LR acc=0.480 auc=0.481
+
+--- Final Results ---
+Total bars trained: 17462
+HAT  → Accuracy: 0.538 | ROCAUC: 0.539
+LR   → Accuracy: 0.502 | ROCAUC: 0.506
