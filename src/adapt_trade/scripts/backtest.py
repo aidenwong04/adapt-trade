@@ -5,10 +5,12 @@ from adapt_trade.features.pipeline import FeaturePipeline
 from adapt_trade.model.learner import OnlineClassifier
 
 CONFIG = {
-    "run_name": "rsi_macd_fast",
+    "run_name": "hyperparam_tuning",
     "features": "ret_1,cum_ret_10,volatility_10,bar_range,vol_ratio,close_vs_ewm,bar_direction,rsi,macd",
     "rsi": "fadingfactor 0.4",
-    "macd": "ewm_fast:0.8, ewm_slow:0.3",
+    "macd": "ewm_fast:0.154, ewm_slow:0.074",
+    "grace_period": "450",
+    "delta": "1e-7",
     "symbol": "BTCUSDT",
     "interval": "15m",
     "hat_seed": 42,
