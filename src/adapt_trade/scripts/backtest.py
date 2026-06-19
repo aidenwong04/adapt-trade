@@ -5,18 +5,18 @@ from adapt_trade.features.pipeline import FeaturePipeline
 from adapt_trade.model.learner import OnlineClassifier
 
 CONFIG = {
-    "run_name": "hyperparam_tuning",
+    "run_name": "1h_candles",
     "features": "ret_1,cum_ret_10,volatility_10,bar_range,vol_ratio,close_vs_ewm,bar_direction,rsi,macd",
     "rsi": "fadingfactor 0.4",
     "macd": "ewm_fast:0.154, ewm_slow:0.074",
     "grace_period": "450",
     "delta": "1e-7",
     "symbol": "BTCUSDT",
-    "interval": "15m",
+    "interval": "1hour",
     "hat_seed": 42,
 }
 
-DATA_PATH = Path(__file__).parent.parent.parent / "data" / "btcusdt_15m.csv"
+DATA_PATH = Path(__file__).parent.parent.parent / "data" / "btcusdt_1h.csv"
 df = pd.read_csv(DATA_PATH)
 df['label'] = (df['close'].shift(-1) > df['close']).astype(int)
 df = df.dropna()
